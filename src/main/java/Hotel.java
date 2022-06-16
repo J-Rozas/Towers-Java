@@ -33,4 +33,8 @@ public class Hotel {
     public void checkOutGuest(Guest guest, ConferenceRoom desiredRoom) {
         desiredRoom.getCollectionOfGuests().remove(guest);
     }
+
+    public Booking bookRoom(int daysBooked, Bedroom bedroom) {
+        return new Booking(daysBooked, bedroom);
+    }
 }
