@@ -1,6 +1,8 @@
 import org.junit.Before;
 import org.junit.Test;
 
+import java.util.ArrayList;
+
 import static org.junit.Assert.assertEquals;
 
 public class ConferenceRoomTest {
@@ -26,12 +28,7 @@ public class ConferenceRoomTest {
 
     @Test
     public void hasCollectionOfGuests() {
-        assertEquals(0, conferenceRoom.getCollectionOfGuests());
+        assertEquals(new ArrayList<>(), conferenceRoom.getNumberOfGuests());
     }
 
-    @Test
-    public void shouldBeAbleToAddGuests() {
-        conferenceRoom.addGuest(guest);
-        assertEquals(1, conferenceRoom.getCollectionOfGuests());
-    }
 }
