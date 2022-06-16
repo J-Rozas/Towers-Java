@@ -3,7 +3,7 @@ import java.util.ArrayList;
 public abstract class Room {
 
     private final int capacity;
-    private ArrayList<Guest> collectionOfGuests;
+    private final ArrayList<Guest> collectionOfGuests;
 
     public Room(int capacity) {
         this.capacity = capacity;
@@ -16,5 +16,9 @@ public abstract class Room {
 
     public ArrayList<Guest> getCollectionOfGuests() {
         return this.collectionOfGuests;
+    }
+
+    public int getNumberOfGuests() {
+        return this.collectionOfGuests.size();
     }
 }
