@@ -28,4 +28,8 @@ public class BedroomTest {
         assertEquals(new ArrayList<>(), bedroom.getCollectionOfGuests());
     }
 
+    @Test
+    public void shouldHaveANightlyRate() {
+        assertEquals(40, bedroom.getBedroomType().getNightlyRate());
+    }
 }
