@@ -57,4 +57,12 @@ public class HotelTest {
         hotel.checkOutGuest(guest, conferenceRoom);
         assertEquals(0, conferenceRoom.getNumberOfGuests());
     }
+
+    @Test
+    public void shouldBeAbleToBookARoom() {
+        Booking booking = hotel.bookRoom(4, bedroom);
+        assertEquals("class Booking", booking.getClass().toString());
+        assertEquals(4, booking.getDaysBooked());
+        assertEquals(bedroom, booking.getBedroom());
+    }
 }
