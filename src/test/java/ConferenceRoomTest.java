@@ -28,7 +28,7 @@ public class ConferenceRoomTest {
 
     @Test
     public void hasCollectionOfGuests() {
-        assertEquals(new ArrayList<>(), conferenceRoom.getNumberOfGuests());
+        assertEquals(new ArrayList<>(), conferenceRoom.getCollectionOfGuests());
     }
 
 }
